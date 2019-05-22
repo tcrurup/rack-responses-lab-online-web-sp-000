@@ -6,6 +6,13 @@ class Application
     binding.pry
     resp = Rack::Response.new
     
-    current_time = 0;
+    current_hour = Time.new.hour
+    if current_hour >= 12
+      resp.write "Good Morning!"
+    else 
+      resp.write "Good Afternoon!"
+    end
+    
+    
   end
 end
