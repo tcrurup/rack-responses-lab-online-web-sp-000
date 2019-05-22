@@ -3,7 +3,6 @@ require 'pry'
 class Application
   
   def call(env)
-    binding.pry
     resp = Rack::Response.new
     
     current_hour = Time.new.hour
@@ -13,6 +12,6 @@ class Application
       resp.write "Good Afternoon!"
     end
     
-    
+    resp.finish
   end
 end
