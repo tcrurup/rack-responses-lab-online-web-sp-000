@@ -1,6 +1,8 @@
 class Application
   
   def call
-    resp = 
+    resp = Rack::Response.new
+    
+    current_time = 0;
   end
 end
