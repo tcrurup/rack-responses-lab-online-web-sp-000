@@ -1,4 +1,6 @@
 class Application
   
-  def 
+  def call
+    resp = 
+  end
 end
